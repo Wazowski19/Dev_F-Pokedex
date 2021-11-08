@@ -1,0 +1,11 @@
+#imagen{
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #bafce6;
+}
+
+#imagen :hover{
+    cursor: pointer;
+}

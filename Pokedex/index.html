@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css" />
+</head>
+<body onload="traerDatos()">
+    <h1>Pokemons</h1>
+
+      <div class="mb-3 flex-column ">
+        <label for="" class="form-label"></label>
+        <input type="text" class="form-text" name="busqueda" id="busqueda" aria-describedby="helpId" placeholder="">
+        <input type="button" value="Buscar" class="btn btn-dark" onclick="buscar(event)">
+      </div>
+    
+    
+    <div id="divModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header" style="padding: 35px 50px">
+                <i class="fa fa-film mx-2 " aria-hidden="true"></i> 
+                <h4 id="nombrePokemon"><span class="glyphicon glyphicon-lock "></span>CINE-PLAY</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body" style="padding: 40px 50px">
+                <label for="number">Número</label>
+                <p id="number"></p>
+                <label for="type">Tipo</label>
+                <p id="type"></p>
+                <label for="height">Altura</label>
+                <p id="height"></p>
+                <label for="weight">Peso</label>
+                <p id="weight"></p>
+                <label for="abilities">Habilidades</label>
+                <p id="abilities"></p>
+                <label for="weakness">Debilidades</label>
+                <p id="weakness"></p>
+              </div>
+            </div>
+    </div>
+    
+    
+    <script src="styles/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    
+</body>
+</html>
